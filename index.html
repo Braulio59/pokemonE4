@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonAPI</title> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header> 
+    <img src="./assets/pokemon-logo-png-1428.png" alt="">
+    </header>
+    <section class="main">
+        <div class="pokemon_card">
+            <img src="" alt="" id="pokemon_img">
+            <h2 id="pokemon_name"></h2>
+            <h3 id="pokemon_type"></h3>
+            <div class="pokemon_information">
+                <div class="data_row">
+                    <strong>Altura: </strong>
+                    <span id="pokemon_height"></span>
+                </div> 
+                <div class="data_row">
+                    <strong>Peso: </strong>
+                    <span id="pokemon_weight"></span>
+                </div>
+            </div>
+        </div> 
+        <div id="error" class="hidden">
+            <img src="./assets/triangle-exclamation-solid.svg" alt="" class="img_error">
+            <span id="error_text">El pokemon que buscas, no existe o no se encuentra</span>
+        </div>
+        <div class="pokemon_selector">
+            <form action="" id="main_form">
+
+                <input type="number" min="0" id="pokemon_input">
+                <button class="efecto" id="boton">poke</button>
+            </form>
+        </div>
+    </section>
+    <script src="./main.js"></script>  
+</body>
+</html>
